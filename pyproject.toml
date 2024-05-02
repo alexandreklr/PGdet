@@ -12,7 +12,7 @@ license = "MIT"
 keywords = []
 authors = [
   { name = "Alexandre Keller", email = "alexandre.keller@epfl.ch" },
-  { name = "Aldric Mercier", email = "alexandre.keller@epfl.ch" },
+  { name = "Aldric Mercier", email = "aldric.mercier@epfl.ch" },
   { name = "Miguel", email = "miguel.rodriguesdossantoscorreia@epfl.ch" },
 ]
 dependencies = [
