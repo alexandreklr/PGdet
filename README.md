@@ -4,6 +4,6 @@ PGdet is a school project created by students of the Swiss Federal Institute of 
 
 
 ## 1. Installation
-PGdet relies on NumPy and RDKIT.
+PGdet relies on NumPy, pointgroup and RDKIT.
 
 
