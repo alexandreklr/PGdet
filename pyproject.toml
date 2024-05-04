@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "PGdet"
 version = "0.0.1"
-description = ''
+description = 'PGdet is a school project created by students of the Swiss Federal Institute of Technology Lausanne: Aldric Mercier, Alexandre Keller and Miguel Correia. The aim of this code is to take organic molecules written in SMILES and extract their pointgroup.'
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
