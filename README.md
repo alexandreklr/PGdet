@@ -7,3 +7,8 @@ PGdet is a school project created by students of the Swiss Federal Institute of 
 PGdet relies on NumPy, pointgroup and RDKIT.
 
 
+## 2. Authors
+
+- [@alexandreklr](https://github.com/alexandreklr)
+- [@aldricmrcr](https://github.com/aldricmrcr)
+- [@Migloops](https://github.com/Migloops)
