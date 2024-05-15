@@ -19,7 +19,7 @@ Then, clone it into your new environment with:
 ```
 
 
-## 2. Authors
+## ⚛️ Authors
 
 - [@alexandreklr](https://github.com/alexandreklr)
 - [@aldricmrcr](https://github.com/aldricmrcr)
