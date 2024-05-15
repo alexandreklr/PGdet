@@ -9,13 +9,15 @@ description = 'PGdet is a school project created by students of the Swiss Federa
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
-keywords = []
 authors = [
   { name = "Alexandre Keller", email = "alexandre.keller@epfl.ch" },
   { name = "Aldric Mercier", email = "aldric.mercier@epfl.ch" },
   { name = "Miguel", email = "miguel.rodriguesdossantoscorreia@epfl.ch" },
 ]
 dependencies = [
+    "rdkit",
+    "numpy",
+    "pointgroup"
 ]
 
 [project.urls]
