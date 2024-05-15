@@ -17,7 +17,8 @@ authors = [
 dependencies = [
     "rdkit",
     "numpy",
-    "pointgroup"
+    "pointgroup",
+    "matplotlib"
 ]
 
 [project.urls]
