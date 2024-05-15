@@ -5,7 +5,7 @@
 PGdet is a school project created by students of the Swiss Federal Institute of Technology Lausanne: Aldric Mercier, Alexandre Keller and Miguel Correia. The aim of this code is to take organic molecules written in SMILES and extract their pointgroup.
 
 
-## 1. Installation
+## 🛠️ Installation
 
 To install our project, you can create a new conda environment with Anaconda with this code:
 
