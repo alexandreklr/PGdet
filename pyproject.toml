@@ -17,3 +17,6 @@ authors = [
 ]
 dependencies = [
 ]
+
+[project.urls]
+source = "https://github.com/alexandreklr/PGdet"
