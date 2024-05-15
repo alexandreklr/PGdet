@@ -6,7 +6,19 @@ PGdet is a school project created by students of the Swiss Federal Institute of 
 
 
 ## 1. Installation
-PGdet relies on NumPy, pointgroup and RDKIT.
+
+To install our project, you can create a new conda environment with Anaconda with this code:
+
+```bash
+  conda create -n pgdet
+  conda activate pgdet
+```
+Then:
+```bash
+  git clone https://github.com/alexandreklr/PGdet.git
+  cd PGdet
+  pip install .
+```
 
 
 ## 2. Authors
