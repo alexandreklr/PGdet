@@ -13,11 +13,9 @@ To install our project, you can create a new conda environment with Anaconda wit
   conda create -n pgdet
   conda activate pgdet
 ```
-Then:
+Then, clone it into your new environment with:
 ```bash
   git clone https://github.com/alexandreklr/PGdet.git
-  cd PGdet
-  pip install .
 ```
 
 
