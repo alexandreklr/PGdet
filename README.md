@@ -24,3 +24,7 @@ Then, clone it into your new environment with:
 - [@alexandreklr](https://github.com/alexandreklr)
 - [@aldricmrcr](https://github.com/aldricmrcr)
 - [@Migloops](https://github.com/Migloops)
+
+## 📞Feedback
+
+If you have any feedback, please reach out to us at alexandre.keller@epfl.ch
