@@ -32,4 +32,4 @@ Finally navigate to PGdet and install:
 
 ## 📞Feedback
 
-If you have any feedback, please reach out to us at alexandre.keller@epfl.ch
+If you have any feedback or suggestions, please reach out to us at alexandre.keller@epfl.ch
