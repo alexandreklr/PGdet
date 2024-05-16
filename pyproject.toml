@@ -18,7 +18,7 @@ dependencies = [
     "rdkit>=2023.9.5",
     "numpy>=1.26.4",
     "pointgroup>=0.4.1",
-    "matplotlib>=3.8.4"
+    "matplotlib>=3.8.4",
 ]
 
 [project.urls]
