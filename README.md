@@ -17,10 +17,10 @@ Then, clone it into your new environment with:
 ```bash
   git clone https://github.com/alexandreklr/PGdet.git
 ```
-Finally navigate to PGdet and install:
+Finally navigate to PGdet and install the dependencies with:
 ```bash
   cd PGdet
-  pip install .
+  pip install -e .
 ```
 
 
