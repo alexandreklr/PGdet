@@ -50,7 +50,7 @@ def calculate_angle(p1, p2, p3):
 def pg_check_smiles(smiles):
     
     # List of smiles of inorganic molecules authorised as an exception.
-    allowed_inorganics = ["O", "N", "NN", "O=O", "N=N", "N#N", "OO"]
+    allowed_inorganics = ["O", "N", "NN", "O=O", "N=N", "N#N", "OO", "F", "FF", "Cl", "ClCl", "Br", "BrBr", "I", "II", "ClI", "ICl"]
     
     # The code gets the Rdkit object from the smiles.
     mol = Chem.MolFromSmiles(smiles)
@@ -83,7 +83,7 @@ def pg_check_smiles(smiles):
 def config_mol(smiles):
     
     # List of smiles of inorganic molecules authorised as an exception.
-    allowed_inorganics = ["O", "N", "NN", "O=O", "N=N", "N#N", "OO"]
+    allowed_inorganics = ["O", "N", "NN", "O=O", "N=N", "N#N", "OO", "F", "FF", "Cl", "ClCl", "Br", "BrBr", "I", "II", "ClI", "ICl"]
     
     # The code gets the Rdkit object from the smiles.
     mol = Chem.MolFromSmiles(smiles)
