@@ -319,7 +319,8 @@ def atom_mapping(smiles, desc = False, plot = False):
         # PointGroup function gives back C1v instead of Cs.
         if pg == "C1v":
             pg = "Cs"
-        
+        elif pg == "C1h":
+            pg = "Cs"
     # Molecule description.
     if desc:
         print(f"Molecule SMILES : {smiles}")
