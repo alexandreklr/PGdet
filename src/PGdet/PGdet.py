@@ -387,5 +387,9 @@ def atom_mapping_interface():
     
     return
 
+def main() :
+    atom_mapping_interface()
 
+if __name__ == "main":
+    main()
 
