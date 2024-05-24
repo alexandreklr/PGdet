@@ -54,8 +54,11 @@ def pg_check_smiles(smiles):
     
     # The code gets the Rdkit object from the smiles.
     mol = Chem.MolFromSmiles(smiles)
-    # Verifying that there is at least one carbon atom within the molecule.
-    has_carbon = any(atom.GetAtomicNum() == 6 for atom in mol.GetAtoms())
+    # Verifying that there is at least one carbon atom within the molecule. mol is a NoneType if the smiles is invalid.
+    try:
+        has_carbon = any(atom.GetAtomicNum() == 6 for atom in mol.GetAtoms())
+    except AttributeError:
+        raise TypeError("Invalid SMILES. Mol object could not be generated.")
     
     # The code checks wether the molecule is organic, corresponds 
     # to an exception or wether the smiles is wrongly spelled.
