@@ -29,7 +29,7 @@ Finally navigate to PGdet and install the dependencies with:
 The functions of this project may be imported as follows:
 
 ```bash
-# work in progress
+from PGdet import atom_mapping
 ```
 The main function is atom_mapping(smiles, desc, plot). It takes three arguments. The first one is a smiles as a string or a list of smiles. The second one is called 'desc' and the third one is called 'plot'. The second and third arguments are booleans and are considered False if not precised.
 The function return the value of the smiles input. For example, it should return 'D6h' when given the smiles 'c1ccccc1'.
