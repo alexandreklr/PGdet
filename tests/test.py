@@ -9,11 +9,28 @@ def test_atom_mapping():
   try :
     atom_mapping('wrong smiles')
     assert False, 'Test failed : Expected error not raised.'
-  except AttributeError:
+  except TypeError:
     pass
   try :
     atom_mapping('FS(F)(F)(F)(F)F')
     assert False, 'Test failed : Expected error not raised.'
   except TypeError:
     pass
+
+def test_count_atoms():
+  pass
+
+def test_calculate_angle():
+  pass
+
+def test_pg_check_smiles():
+  pass
+
+def test_config_mol():
+  pass
+
+def test_molecule_angles():
+  pass
+
+def test_molecules_bonds():
   
