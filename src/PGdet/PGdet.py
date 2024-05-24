@@ -97,9 +97,7 @@ def config_mol(smiles):
     AllChem.EmbedMolecule(mol, randomSeed=42, useExpTorsionAnglePrefs=True, useBasicKnowledge=True)
     
     # Conformation optimisation.
-    ff = AllChem.UFFGetMoleculeForceField(mol)
-    ff.Initialize()
-    ff.Minimize(energyTol=1e-01, maxIts=1000)
+    AllChem.MMFFOptimizeMolecule(mol)
     
     # Bond length is adjusted. Bonds that are part of a ring are not modified.
     conf = mol.GetConformer()
