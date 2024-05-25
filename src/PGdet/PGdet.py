@@ -51,21 +51,23 @@ def pg_check_smiles(smiles):
     
     # List of smiles of inorganic molecules authorised as an exception.
     allowed_inorganics = ["O", "N", "NN", "O=O", "N=N", "N#N", "OO", "F", "FF", "Cl", "ClCl", "Br", "BrBr", "I", "II", "ClI", "ICl"]
+
+    # The function tests if smiles is a string or a list.
+    if type(smiles) != str and type(smiles) != list:
+        raise TypeError("Invalid SMILES class. SMILES must be a string or a list of strings.")
     
     # The code gets the Rdkit object from the smiles.
     mol = Chem.MolFromSmiles(smiles)
+    
     # Verifying that there is at least one carbon atom within the molecule. mol is a NoneType if the smiles is invalid.
     try:
         has_carbon = any(atom.GetAtomicNum() == 6 for atom in mol.GetAtoms())
+        if smiles == '':
+            raise AttributeError
     except AttributeError:
         raise TypeError("Invalid SMILES. Mol object could not be generated.")
     
-    # The code checks wether the molecule is organic, corresponds 
-    # to an exception or wether the smiles is wrongly spelled.
-    if type(smiles) != str and type(smiles) != list:
-        raise TypeError("Invalid SMILES class. SMILES must be a string or a list of strings.")
-    if mol is None:
-        raise TypeError("Error, the smiles imput does not correspond to any molecule. Maybe you wrote it wrong.")
+    # The code checks if the molecule is an allowed organic and if it is not too large.
     if not has_carbon and smiles not in allowed_inorganics: 
         raise TypeError(f"Error: The smiles input corresponds to an inorganic molecule. No molecule could be printed. The molecule should be purely organic or be an exception: {allowed_inorganics}")
     if count_atoms(smiles) > 25:
