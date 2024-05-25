@@ -53,7 +53,7 @@ def pg_check_smiles(smiles):
     allowed_inorganics = ["O", "N", "NN", "O=O", "N=N", "N#N", "OO", "F", "FF", "Cl", "ClCl", "Br", "BrBr", "I", "II", "ClI", "ICl"]
 
     # The function tests if smiles is a string or a list.
-    if type(smiles) != str and type(smiles) != list:
+    if type(smiles) != str :
         raise TypeError("Invalid SMILES class. SMILES must be a string or a list of strings.")
     
     # The code gets the Rdkit object from the smiles.
