@@ -79,7 +79,6 @@ def pg_check_smiles(smiles):
         atomic_num = atom.GetAtomicNum()
         if atomic_num > 20 and atomic_num not in [33, 34, 15, 16, 9, 17, 35, 53]:
             raise TypeError("Error: the smiles corresponds to an organometallic complex, which is not suited by the program.")
-            raise TypeError("Please, try another smiles.")
 
     return 
 
