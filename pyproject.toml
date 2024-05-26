@@ -19,6 +19,7 @@ dependencies = [
     "numpy>=1.26.4",
     "pointgroup>=0.4.1",
     "matplotlib>=3.8.4",
+    "pytest>=6.2.5"
 ]
 
 [project.urls]
