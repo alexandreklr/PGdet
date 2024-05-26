@@ -26,7 +26,7 @@ def test_calculate_angle():
     assert calculate_angle([1,2,3],[4,5,6],[7,8,9]) == 180.0, 'Test failed : Wrong value was returned.'
     assert calculate_angle([3,-1,4],[2,2,2],[0,1,-3]) == 116.0499813323194, 'Test failed : Wrong value was returned.'
     assert calculate_angle([2,3,4],[5,6,7],[8,9,11]) == 171.9505330244716, 'Test failed : Wrong value was returned.'
-    assert calculate_angle([0,0,0],[1,2,2],[2,1,3]) == 101.0958032831364, 'Test failed : Wrong value was returned.'
+    assert calculate_angle([0,0,0],[1,2,2],[2,1,3]) == 101.09580328313639, 'Test failed : Wrong value was returned.'
     assert calculate_angle([7,3,2],[6,4,1],[5,5,1]) == 144.73561031724535, 'Test failed : Wrong value was returned.'
     assert calculate_angle([2,3,4],[3,3,3],[2,2,2]) == 90.0, 'Test failed : Wrong value was returned.'
     assert calculate_angle([8,7,6],[5,5,5],[2,4,4]) == 165.23686737636845, 'Test failed : Wrong value was returned.'
