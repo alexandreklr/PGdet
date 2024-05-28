@@ -378,6 +378,6 @@ def atom_mapping_interface():
 def main() :
     atom_mapping_interface()
 
-if __name__ == "main":
+if __name__ == "__main__":
     main()
 
