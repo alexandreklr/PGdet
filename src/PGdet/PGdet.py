@@ -111,22 +111,7 @@ def config_mol(smiles):
     
     # Modifies angles of H-X where X is O, N, S or P.
     if smiles not in allowed_inorganics:   
-        for atom in mol.GetAtoms():
-            if atom.GetSymbol() in ['O', 'N', 'S', 'P']:
-                for neighbor in atom.GetNeighbors():
-                    if neighbor.GetSymbol() == 'H':
-                        # Finds Carbon atom bonded to X.
-                        carbon_atom = None
-                        for n in atom.GetNeighbors():
-                            if n.GetSymbol() == 'C':
-                                carbon_atom = n
-                                break
-                            if carbon_atom:
-                            # Check if the bonds are part of a ring.
-                                if not mol.GetBondBetweenAtoms(neighbor.GetIdx(), atom.GetIdx()).IsInRing() and not mol.GetBondBetweenAtoms(atom.GetIdx(), carbon_atom.GetIdx()).IsInRing():
-                                # Defines H-X-C angles to 180 degrees, that way the code should handle better heteroatoms.
-                                    SetAngleDeg(conf, neighbor.GetIdx(), atom.GetIdx(), carbon_atom.GetIdx(), 180.0)  
-                                    
+        for atom in mol.GetAtoms(): 
             # Modifies the angles between 
             # substituants of sp3 carbon atoms.
             if atom.GetSymbol() == "C":
